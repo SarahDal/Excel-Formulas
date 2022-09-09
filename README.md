@@ -1,4 +1,4 @@
-# ExcelOSGridRef
+# Convert 8 and 10 digit OS grid refs to 6 digits in excel with a formula
 an excel formula to convert 8 and 10 digit grid references to 6 digit. 
 
 Works for formulas in a single string with no spaces, eg
