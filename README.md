@@ -2,6 +2,7 @@
 an excel formula to convert 8 and 10 digit grid references to 6 digit. 
 
 Works for formulas in a single string with no spaces, eg
+
 NS7486320333
 
 becomes
