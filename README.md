@@ -17,3 +17,9 @@ NS 748 203
 Where a list of sites is in cells Sheet1!B2:B33, and the corresponding cells in column C have the numbers of things at each site, this will return the sites with the biggest number of things. The ROW(A1) returns the firs biggest, so dragging down a column will then give you the second biggest in the cell beneath, etc.
 
 =INDEX(Sheet1!$B$2:$B$33, MATCH(LARGE(Sheet1!C$2:C$33, ROW($A1)),Sheet1!C$2:C$33, 0))
+
+# Useful QGIS
+## Create wkt square 1km from points in bottom left (ie to map a tetrad)
+put this in the calculator as a new field called "wkt", set to text 256 long, and then save as a csv. Import as WKT.
+
+'POLYGON ((' ||  $x  || ' ' ||  $y  || ', '||  ($x+1000)  || ' ' ||  $y  || ', '||  ($x+1000)  || ' ' ||  ($y+1000)  || ', '||  $x  || ' ' ||  ($y+1000)  || ', '||  $x  || ' ' ||  $y  || ', ' || '))'
