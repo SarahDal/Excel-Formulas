@@ -23,3 +23,8 @@ Where a list of sites is in cells Sheet1!B2:B33, and the corresponding cells in 
 put this in the calculator as a new field called "wkt", set to text 256 long, and then save as a csv. Import as WKT.
 
 `'POLYGON ((' ||  $x  || ' ' ||  $y  || ', '||  ($x+1000)  || ' ' ||  $y  || ', '||  ($x+1000)  || ' ' ||  ($y+1000)  || ', '||  $x  || ' ' ||  ($y+1000)  || ', '||  $x  || ' ' ||  $y  || ', ' || '))'`
+
+
+THis one is for QGIS - strip the numbers from a field called "name" into a new field.
+
+`regexp_replace("name", '[^a-zA-Z ]', '')`
